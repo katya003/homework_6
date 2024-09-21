@@ -5,7 +5,6 @@ import pages.RegistrationPage;
 
 public class RegistrationWithPageObjectsTests extends TestBase {
     String firstName = "Kate";
-    //String  negativeFirstName = "111";
     String lastName = "Mar";
     String userEmail = "kate@kate.ru";
     String gender = "Male";
