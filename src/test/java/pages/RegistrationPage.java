@@ -8,20 +8,20 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class RegistrationPage {
-    private SelenideElement firstNameInput = $("#firstName");
-    private SelenideElement lastNameInput = $("#lastName");
-    private SelenideElement userEmailInput = $("#userEmail");
-    private SelenideElement genderInput = $("#genterWrapper");
-    private SelenideElement userNumberInput = $("#userNumber");
-    private SelenideElement dateOfBirth = $("#dateOfBirthInput");
-    private SelenideElement subjectsInput = $("#subjectsInput");
-    private SelenideElement hobbiesInput = $("#hobbiesWrapper");
-    private SelenideElement uploadPicture = $("#uploadPicture");
-    private SelenideElement currentAddressInput = $("#currentAddress");
-    private SelenideElement stateCityWrapperInput = $("#stateCity-wrapper");
-    private SelenideElement stateInput = $("#state");
-    private SelenideElement cityInput = $("#city");
-    private SelenideElement submitInput = $("#submit");
+    private final SelenideElement firstNameInput = $("#firstName");
+    private final SelenideElement lastNameInput = $("#lastName");
+    private final SelenideElement userEmailInput = $("#userEmail");
+    private final SelenideElement genderInput = $("#genterWrapper");
+    private final SelenideElement userNumberInput = $("#userNumber");
+    private final SelenideElement dateOfBirth = $("#dateOfBirthInput");
+    private final SelenideElement subjectsInput = $("#subjectsInput");
+    private final SelenideElement hobbiesInput = $("#hobbiesWrapper");
+    private final SelenideElement uploadPicture = $("#uploadPicture");
+    private final SelenideElement currentAddressInput = $("#currentAddress");
+    private final SelenideElement stateCityWrapperInput = $("#stateCity-wrapper");
+    private final SelenideElement stateInput = $("#state");
+    private final SelenideElement cityInput = $("#city");
+    private final SelenideElement submitInput = $("#submit");
 
     CalendarComponent calendarComponent = new CalendarComponent();
 
@@ -48,7 +48,7 @@ public class RegistrationPage {
         userEmailInput.setValue(value);
         return this;
     }
-    public RegistrationPage setGenter(String value) {
+    public RegistrationPage setGender(String value) {
         genderInput.$(byText(value)).click();
         return this;
     }

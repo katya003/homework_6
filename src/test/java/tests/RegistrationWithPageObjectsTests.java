@@ -28,7 +28,7 @@ public class RegistrationWithPageObjectsTests extends TestBase {
                 .setFirstName(firstName)
                 .setLastName(lastName)
                 .setUserEmail(userEmail)
-                .setGenter(gender)
+                .setGender(gender)
                 .setUserNumber(userNumber)
                 .setDateOfBirth(dayOfBirth, monthOfBirth, yearOfBirth)
                 .setSubject(subjectsOne)
@@ -57,7 +57,7 @@ public class RegistrationWithPageObjectsTests extends TestBase {
                 .removeBanner()
                 .setFirstName(firstName)
                 .setLastName(lastName)
-                .setGenter(gender)
+                .setGender(gender)
                 .setUserNumber(userNumber)
                 .clickSubmit();
 
